@@ -57,4 +57,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/odanielnicolau/ProjetoCalculadora.git
+git clone https://github.com/odanielnicolau/Projeto-Calculadora-com-Scanner
