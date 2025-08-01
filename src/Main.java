@@ -5,6 +5,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        //Inicio do programa: Boas vindas, uma breve descrição sobre o projeto e indentificação do usuário.
+
         System.out.println("Bem-vindo à Calculadora com Scanner!");
         System.out.println("====================================");
         System.out.println("Esse projeto é uma atualização de um projeto já existente no meu Github, vão lá dar uma olhada! @odanielnicolau");
@@ -12,7 +14,9 @@ public class Main {
         System.out.print("Digite seu nome: ");
         String name = scanner.nextLine();
 
+        //Declaração de variavél para o usuário conseguir fazer várias operações, sem precisar encerrar o programa.
         boolean continuar = true;
+
 
         while (continuar) {
             System.out.println("====================================");
@@ -30,10 +34,13 @@ public class Main {
             System.out.println("5 - Executar todas as operações disponíveis");
             System.out.println("6 - Sair do Programa");
             System.out.print("Digite o número da operação desejada: ");
-            int escolha = scanner.nextInt();
+            int escolha = scanner.nextInt(); //declarei a escolha como int, então se a entrada do usuario não for int,
+                                            // o programa irá dar erro.
 
             System.out.println("====================================");
 
+
+            //Utilizando switch para a escolha do usuário, poderia ser if e else também
             switch (escolha) {
                 case 1:
                     System.out.println("A soma dos valores é: " + (op1 + op2));
@@ -64,6 +71,8 @@ public class Main {
                 case 6:
                     System.out.println("Encerrando o programa... Até mais, " + name + "!");
                     System.exit(0);
+
+                //Caso o usuário digitar qualquer opção que não seja as definidas.
                 default:
                     System.out.println("Opção inválida.");
             }
@@ -71,7 +80,7 @@ public class Main {
             // Pergunta se o usuário deseja sair
             System.out.println("====================================");
             System.out.print("Deseja sair do programa? (s/n): ");
-            scanner.nextLine(); // consome a quebra de linha pendente
+            scanner.nextLine();
             String resposta = scanner.nextLine().trim().toLowerCase();
 
             if (resposta.equals("s") || resposta.equals("sim")) {
