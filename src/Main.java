@@ -9,7 +9,8 @@ public class Main {
 
         System.out.println("Bem-vindo à Calculadora com Scanner!");
         System.out.println("====================================");
-        System.out.println("Esse projeto é uma atualização de um projeto já existente no meu Github, vão lá dar uma olhada! @odanielnicolau");
+        System.out.println("Esse projeto é uma atualização de um projeto");
+        System.out.println("já existente no meu Github, vão lá dar uma olhada! @odanielnicolau");
         System.out.println("====================================");
         System.out.print("Digite seu nome: ");
         String name = scanner.nextLine();
